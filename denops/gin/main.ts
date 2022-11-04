@@ -14,6 +14,7 @@ import { main as mainPatch } from "./command/patch/main.ts";
 import { main as mainStatus } from "./command/status/main.ts";
 
 import { main as mainComponentBranch } from "./component/branch.ts";
+import { main as mainComponentStatus } from "./component/status.ts";
 import { main as mainComponentTraffic } from "./component/traffic.ts";
 import { main as mainComponentWorktree } from "./component/worktree.ts";
 
@@ -32,6 +33,7 @@ export function main(denops: Denops): void {
   mainStatus(denops);
 
   mainComponentBranch(denops);
+  mainComponentStatus(denops);
   mainComponentTraffic(denops);
   mainComponentWorktree(denops);
 }
